@@ -4,20 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
+    tools:context=".MembersOnly"
     android:background="@drawable/homebg">
 
-
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="250dp"
-        android:layout_height="154dp"
+        android:id="@+id/textView2"
+        android:layout_width="269dp"
+        android:layout_height="66dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="669dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Welcome to the No Judgement Zone"
+        android:text="Members Only"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/design_default_color_surface"
         android:textSize="40sp"
         android:textStyle="bold|italic"
@@ -33,14 +32,14 @@
         android:layout_height="103dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="511dp"
+        android:layout_marginTop="681dp"
         android:layout_marginBottom="1dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
             android:id="@+id/homebtn"
@@ -66,5 +65,4 @@
             android:background="@null"
             android:src="@drawable/secure" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

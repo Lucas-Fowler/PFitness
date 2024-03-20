@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 
-class Home : AppCompatActivity() {
+class MembersOnly : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_members_only)
         getSupportActionBar()?.hide()
 
         val homebutton : ImageButton = findViewById(R.id.homebtn)
@@ -29,6 +29,5 @@ class Home : AppCompatActivity() {
             intent = Intent(this, MembersOnly::class.java)
             startActivity(intent)
         }
-
     }
 }
