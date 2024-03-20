@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Demo1</string>
     <string name="hello_world">hello</string>
+    <string name="iframe_width_100_height_100_src_https_www_youtube_com_embed_zfpkixp2juq_title_learn_the_planet_fitness_30_minute_circuit_frameborder_0_allow_accelerometer_autoplay_clipboard_write_encrypted_media_gyroscope_picture_in_picture_web_share_allowfullscreen_iframe"><![CDATA[<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/zfPKIxp2JuQ\" title=\"Learn the Planet Fitness 30 Minute Circuit\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>]]></string>
 </resources>
