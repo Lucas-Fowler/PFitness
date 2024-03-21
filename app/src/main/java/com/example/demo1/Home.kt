@@ -4,7 +4,9 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 
 class Home : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -28,6 +30,18 @@ class Home : AppCompatActivity() {
         securebutton.setOnClickListener {
             intent = Intent(this, MembersOnly::class.java)
             startActivity(intent)
+        }
+
+        val button : Button = findViewById(R.id.button)
+
+        button.setOnClickListener {
+            Toast.makeText(this, "DO NOT JOIN!!!", Toast.LENGTH_SHORT).show()
+        }
+
+        val button2 : Button = findViewById(R.id.button2)
+
+        button2.setOnClickListener {
+            Toast.makeText(this, "IT'S NOT FREE!!!", Toast.LENGTH_SHORT).show()
         }
 
     }

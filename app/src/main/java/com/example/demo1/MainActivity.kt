@@ -20,5 +20,7 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
+
+
     }
 }
