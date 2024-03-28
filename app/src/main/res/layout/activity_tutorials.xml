@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tutorials"
-    android:background="@drawable/homebg">
+    android:background="@drawable/homebg"
+    tools:context=".Tutorials">
+
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="269dp"
@@ -26,7 +28,33 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="317dp"
+        android:layout_height="264dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="317dp"
+        android:layout_height="218dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/web"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="392dp"
         android:layout_height="103dp"
         android:layout_alignParentBottom="true"
@@ -64,4 +92,6 @@
             android:background="@null"
             android:src="@drawable/secure" />
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
