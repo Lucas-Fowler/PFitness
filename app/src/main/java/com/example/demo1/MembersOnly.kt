@@ -17,17 +17,5 @@ class MembersOnly : AppCompatActivity() {
         val tutorialsbutton : ImageButton = findViewById(R.id.tutorialbtn)
         val securebutton : ImageButton = findViewById(R.id.lockedbtn)
 
-        homebutton.setOnClickListener {
-            intent = Intent(this, Home::class.java)
-            startActivity(intent)
-        }
-        tutorialsbutton.setOnClickListener {
-            intent = Intent(this, Tutorials::class.java)
-            startActivity(intent)
-        }
-        securebutton.setOnClickListener {
-            intent = Intent(this, MembersOnly::class.java)
-            startActivity(intent)
-        }
     }
 }
