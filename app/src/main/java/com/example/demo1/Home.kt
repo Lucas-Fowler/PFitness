@@ -33,16 +33,21 @@ class Home : AppCompatActivity() {
         }
 
         val button : Button = findViewById(R.id.button)
-
         button.setOnClickListener {
             Toast.makeText(this, "DO NOT JOIN!!!", Toast.LENGTH_SHORT).show()
         }
 
         val button2 : Button = findViewById(R.id.button2)
-
         button2.setOnClickListener {
             Toast.makeText(this, "IT'S NOT FREE!!!", Toast.LENGTH_SHORT).show()
         }
+
+        val button4 : Button = findViewById(R.id.button4)
+        button4.setOnClickListener {
+            intent = Intent( this, Feedback::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

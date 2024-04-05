@@ -42,7 +42,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#ffff00">
 
         <ImageButton
             android:id="@+id/homebtn"
@@ -72,19 +73,6 @@
             android:src="@drawable/secure" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="389dp"
-        android:layout_height="390dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="2dp"
-        android:foregroundTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lock" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -119,8 +107,8 @@
         android:id="@+id/imageView6"
         android:layout_width="211dp"
         android:layout_height="188dp"
-        android:layout_marginStart="86dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="91dp"
         android:layout_marginBottom="13dp"
         android:alpha=".5"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
@@ -129,5 +117,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/slll" />
+
+    <LinearLayout
+        android:layout_width="289dp"
+        android:layout_height="278dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
+        android:background="#808080"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="177dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="2dp"
+            android:foregroundTint="#000000"
+            app:srcCompat="@drawable/lock" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:text="Home"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
