@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="330dp"
+        android:layout_height="366dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="214dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="215dp"
+        android:background="#7b0099"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/forgotpass2"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="116dp"
+            android:inputType="text|textVisiblePassword|textAutoComplete"
+            android:text="Incorrect Username or Password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="280dp"
+            android:layout_height="222dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/pffail" />
+
+        <LinearLayout
+            android:layout_width="291dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="7dp"
+                android:text="Go Back" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_margin="7dp"
+                android:layout_marginTop="164dp"
+                android:text="New Account" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
