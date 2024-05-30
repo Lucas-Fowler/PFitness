@@ -1,14 +1,17 @@
 package com.example.demo1
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 
 class Sign_Up : MainActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
@@ -31,10 +34,10 @@ class Sign_Up : MainActivity() {
                 if (newpassword.text.toString() == confirmpassword.text.toString()) {
                     samepassword = true
                 } else {
-                    Toast.makeText(this, "Please check your password", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
                 }
             } else if (confirmpassword.text.toString() == "") {
-                Toast.makeText(this, "Please confirm your password", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please retype your password", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "Please type in your new login information.", Toast.LENGTH_SHORT).show()
             }
@@ -42,9 +45,16 @@ class Sign_Up : MainActivity() {
                 users.add(User(newusername.text.toString(), newpassword.text.toString()))
                 Log.d(users[1].username, users[1].password)
                 Toast.makeText(this, "Account has been created.", Toast.LENGTH_SHORT).show()
-                intent = Intent(this, MainActivity::class.java)
+                intent = Intent(this, Home::class.java)
                 startActivity(intent)
             }
+        }
+
+        val back = findViewById<ImageButton>(R.id.imageButton)
+
+        back.setOnClickListener {
+            intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
     }

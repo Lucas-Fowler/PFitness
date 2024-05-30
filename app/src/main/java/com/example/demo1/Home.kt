@@ -4,8 +4,10 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.PopupWindow
 import android.widget.Toast
 
 class Home : AppCompatActivity() {
@@ -47,7 +49,6 @@ class Home : AppCompatActivity() {
             intent = Intent( this, Feedback::class.java)
             startActivity(intent)
         }
-
 
     }
 }

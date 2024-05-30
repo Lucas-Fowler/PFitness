@@ -34,10 +34,10 @@
         android:layout_marginStart="68dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="69dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
         android:text="Submit Response"
         app:cornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/progress_Bar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar"
@@ -155,18 +155,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <ProgressBar
-        android:id="@+id/progress_Bar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="149dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="122dp"
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="103dp"
+        android:layout_height="99dp"
+        android:layout_marginEnd="297dp"
         android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/topleftcorner"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topleft" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,22 +37,17 @@ open class MainActivity : AppCompatActivity() {
 
 
         button.setOnClickListener {
-            Log.d("# of Users", users.size.toString())
             for (x in users) {
-                Log.d(x.username, x.password)
                 if (x.username == userName.text.toString() && x.password == passWord.text.toString()) {
                     flag = true
                 }
             }
-            if (userName.text.toString() == "" && passWord.text.toString() == "") {
-                flag = null
-            } else {
-                flag = false
-            }
             if (flag == true) {
                 intent = Intent(this, Home::class.java)
                 startActivity(intent)
-            } else if (flag == false) {
+            } else if (userName.text.toString() == "" && passWord.text.toString() == "") {
+                Toast.makeText(this, "Please type in your username and password!", Toast.LENGTH_SHORT).show()
+            } else {
                 window.showAtLocation(view, Gravity.CENTER, 0, 0)
                 newAccount.setOnClickListener {
                     intent = Intent(this, Sign_Up::class.java)
@@ -61,8 +56,7 @@ open class MainActivity : AppCompatActivity() {
                 goback.setOnClickListener {
                     window.dismiss()
                 }
-            } else {
-                Toast.makeText(this, "Please type in your username and password!", Toast.LENGTH_SHORT).show()
+
             }
         }
     }
