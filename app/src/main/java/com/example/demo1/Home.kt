@@ -50,5 +50,10 @@ class Home : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val logout = findViewById<ImageButton>(R.id.logoutbox)
+        logout.setOnClickListener {
+            intent = Intent( this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

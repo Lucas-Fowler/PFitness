@@ -7,6 +7,18 @@
     android:background="@drawable/homebg"
     tools:context=".MembersOnly">
 
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="257dp"
+        android:layout_height="259dp"
+        android:alpha=".5"
+        android:background="@android:color/transparent"
+        android:scaleX=".15"
+        android:scaleY=".15"
+        app:srcCompat="@drawable/logg"
+        tools:layout_editor_absoluteX="-93dp"
+        tools:layout_editor_absoluteY="-87dp" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="269dp"

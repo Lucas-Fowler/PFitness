@@ -15,6 +15,7 @@ import android.widget.VideoView
 class Tutorials : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     lateinit var webView: WebView
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tutorials)
@@ -53,6 +54,11 @@ class Tutorials : AppCompatActivity() {
         }
         securebutton.setOnClickListener {
             intent = Intent(this, MembersOnly::class.java)
+            startActivity(intent)
+        }
+        val logout = findViewById<ImageButton>(R.id.logoutbox2)
+        logout.setOnClickListener {
+            intent = Intent( this, MainActivity::class.java)
             startActivity(intent)
         }
     }

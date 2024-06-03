@@ -43,7 +43,6 @@ class Sign_Up : MainActivity() {
             }
             if (iscomplete == true && samepassword == true) {
                 users.add(User(newusername.text.toString(), newpassword.text.toString()))
-                Log.d(users[1].username, users[1].password)
                 Toast.makeText(this, "Account has been created.", Toast.LENGTH_SHORT).show()
                 intent = Intent(this, Home::class.java)
                 startActivity(intent)
